@@ -29,7 +29,7 @@ app.post('/', async (req, res) => {
     shortUrl,
   });
 
-  req.body.originalUrl = '';
+
 
   res.render("index", {
     shortUrl: `${process.env.baseUrl}/${shortUrl}`,
